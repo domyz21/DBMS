@@ -28,7 +28,7 @@ from LAVORO l join persona p on p.CF = l.CF_medico
 where cod_osp = "OSP001" AND
 	CF_medico NOT IN (select CF_medico
 					from LAVORO
-					where cod_osp = "OSP002");
+					where cod_osp = "OSP003");
 /*---------------------------------------*/
 select p.CF, pr.nome, pr.cognome
 	from PAZIENTE P join Persona pr on p.CF = pr.CF
